@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Philippines</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Raleway', sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* Navigation styles */
+    nav {
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: rgb(24, 110, 134);
+      margin-left: 1 rem;
+      font-weight: 500; 
+    }
+
+    nav a:hover {
+      color: rgb(30, 30, 30);
+    }
+    .logo {
+      font-family:'Pacifico', cursive;
+      font-size: 1.7rem;
+      color: rgb(24, 110, 134);
+    }
+
+    /* Hero section styles */
+    .hero {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .hero video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-content {
+      position: relative;
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      color: rgba(255, 255, 255, 0.621);
+      text-align: center;
+      padding: 0 2rem;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      margin-top: 15%;
+      color: rgb(24, 110, 134);
+      text-decoration:none;
+      font-weight: 600;
+      font-size: 1.5rem;
+      font-family:monospace
+    }
+
+    .btn:hover {
+      color: rgb(29, 145, 177);
+    }
+
+    /* Destinations section */
+    .destinations {
+      background-image:url('photo19.jpeg');
+      
+
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .destinations h2 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .destinations-container {
+      display: flex;
+      overflow-x: auto;
+       /* For Firefox */
+    }
+
+    .destinations-container::-webkit-scrollbar {
+      display: none; 
+    }
+    .destination {
+      flex: 0 0 auto;
+      width: 360px;
+      margin-right: 1.5rem;
+      border-radius: 10px;      
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .destination img {
+      width: 100%;
+      height: 220px;
+      object-fit:fill;
+    }
+
+    .destination-info {
+      padding: 3rem;
+      background: #f9f9f9;
+    }
+
+    .destination h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">
+      <a href="main1.html">🌏</a>
+      <a href="#">Explore Philippines</a> 
+    </div>
+    <div class="nav-links">
+      <a href="#destinations">Destinations</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <video autoplay muted loop>
+      <source src="philippines.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content">
+      <a href="#destinations" class="btn">Explore Destinations</a>
+    </div>
+  </header>
+
+  <!-- Destinations Section -->
+  <section id="destinations" class="destinations">
+    <h2 style="font-family:Abril Fatface;font-weight:500;font-size:70px;color: aqua;">Breathtaking getaways</h2>
+    <div class="destinations-wrapper">
+      <div class="destinations-container">
+        <!-- Destination 1 -->
+        <div class="destination">
+          <img src="palawan.jpeg" alt="Palawan">
+          <div class="destination-info">
+            <h3>Palawan</h3>
+            <p>Kayak through crystal-clear lagoons exploring hidden beaches.<br>-Western Philippines</p>
+          </div>
+        </div>
+        <!-- Destination 2 -->
+        <div class="destination">
+          <img src="borocay.jpeg" alt="Boracay">
+          <div class="destination-info">
+            <h3>Boracay</h3>
+            <p>White sand, nightlife, and sunsets like nowhere else.<br>-Aklan</p>
+          </div>
+        </div>
+        <!-- Destination 3 -->
+        <div class="destination">
+          <img src="chocolate hills.jpeg" alt="Chocolate Hills">
+          <div class="destination-info">
+            <h3>Chocolate Hills</h3>
+            <p>Marvel at the unique cone-shaped hills of Bohol.<br>-Bohol Island</p>
+          </div>
+        </div>
+        <div class="destination">
+          <img src="vigan.jpeg" alt="Vigan">
+          <div class="destination-info">
+            <h3>Vigan</h3>
+            <p>Travel back in time on cobblestone streets of a Spanish-era town.<br>-Ilocos Sur</p>
+          </div>
+        </div>
+        <div class="destination">
+          <img src="banaue.jpeg" alt="Banaue Rice Terraces">
+          <div class="destination-info">
+            <h3>Banaue Rice Terraces</h3>
+            <p>Ancient terraces carved into the mountains by hand.<br>-Ifugao Province</p>
+          </div>
+        </div>
+        <div class="destination">
+          <img src="cebu.jpeg" alt="Cebu">
+          <div class="destination-info">
+            <h3>Cebu</h3>
+            <p>Swim with whale sharks and dive into waterfalls.<br>-Central Visayas</p>
+          </div>
+        </div>
+        <div class="destination">
+          <img src="siargao.jpeg" alt="Siargao">
+          <div class="destination-info">
+            <h3>Siargao</h3>
+            <p>The surfing capital of the Philippines, with island charm.<br>-Surigao del Norte</p>
+          </div>
+        </div>
+        <div class="destination">
+          <img src="mayon volcano.jpeg" alt="Mayon Volcano">
+          <div class="destination-info">
+            <h3>Mayon Volcano</h3>
+            <p>Admire the perfectly symmetrical cone of an active volcano.<br>-Albay</p>
+          </div>
+        </div>
+        <div class="destination">
+          <img src="manila.jpeg" alt="Manila">
+          <div class="destination-info">
+            <h3>Manila</h3>
+            <p>Where modern life and colonial heritage collide.<br>-National Capital Region</p>
+          </div>
+        </div>
+      </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Vibes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Raleway', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      z-index: 1000;
+    }
+
+    nav h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 1.8rem;
+      color: #333;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #332323;
+      font-weight: 600;
+    }
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    #hero {
+      background: url('photo9.jpg') center/cover no-repeat;
+      color: white;
+    }
+
+    #hero h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    #hero p {
+      font-size: 1rem;
+      max-width: 600px;
+      margin-top: 1rem;
+      font-weight: 400;
+    }
+
+    .btn {
+      margin-top: 2rem;
+      padding: 0.7rem 1.5rem;
+      border: 2px solid white;
+      background: transparent;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background: white;
+      color: #333;
+    }
+
+    #map, #land {
+      background: #cfb9c9;
+      color: #333;
+    } 
+
+    h3 {
+      font-family: 'Pacifico', cursive;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+    h2{
+        font-family: 'Times New Roman', Times, serif;
+        color: #ffffff;
+    }
+
+    p {
+      max-width: 600px;
+      font-weight: 500;
+    }
+    .popup {
+            position: relative;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px #cfb9c9;
+        }
+    
+    #mapcontainer{
+            margin: 0;
+            padding: 0;
+            background-color:#cfb9c9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20vh;
+    }
+    .flex-container {
+        display: flex;
+        flex-direction:row-reverse;
+        background-color: #cfb9c9;
+    }
+    .flex-container > div {
+        background-color: #f1f1f1;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+    }
+    .author-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.author-grid img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.author-text {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+    
+        .author-text p {
+        margin: 0;
+        }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <h1 id="logo">🌏Travel Vibes</h1>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#map">Map</a></li>
+      <li><a href="#land">About</a></li>
+    </ul>
+  </nav>
+
+  <section id="hero">
+    <h2 style="color: rgb(189, 167, 118)"><strong>EXPLORE. DREAM. DISCOVER.</strong></h2>
+    <p style="color: rgb(48, 0, 37);font-weight: 600;font-family: Georgia, 'Times New Roman', Times, serif;">This is a world travel blog featuring beautiful destinations, new experiences, and hidden places around the globe. Please tag along!</p>
+    <a href="#map" class="btn">START EXPLORING</a>
+  </section>
+
+  <section id="map">
+    <h3>Lost? Perfect.
+        Every click’s a new Adventure</h3>
+    <p>Pack nothing. Tap everything</p>
+    <a href="main.html" class="btn" id="enterBtn">ENTER</a>
+    <section id="mapcontainer">
+        <div class="popup">
+            <img src="asia map.png" usemap="#asia-map" alt="Asia Map" width="800">
+            <map name="asia-map">
+                <area alt="Turkey" title="Turkey" href="turkey.html" coords="" shape="rect">
+                <area alt="Saudi Arabia" title="Saudi Arabia" href="saudi_arabia.html" coords="" shape="rect">
+                <area alt="India" title="India" href="india.html" coords="300,250,350,400" shape="rect">
+                <area alt="Indonesia" title="Indonesia" href="indonesia.html" coords="500,400,600,500" shape="rect">
+                <area alt="China" title="China" href="china.html" coords="400,200,500,300" shape="rect">
+                <area alt="Mongolia" title="Mongolia" href="mongolia.html" coords="350,148,450,200" shape="rect">
+                <area alt="Russia" title="Russia" href="russia.html" coords="325,8,880,116" shape="rect">
+                <area alt="Thailand" title="Thailand" href="thailand.html" coords="395,355,430,400" shape="rect">
+                <area alt="South Korea" title="South Korea" href="south_korea.html" coords="520,195,580,250" shape="rect">
+                <area alt="Japan" title="Japan" href="japan.html" coords="550,195,600,250" shape="rect">
+                <area alt="Kazakhstan" title="Kazakhstan" href="kazakhstan.html" coords="200,148,350,200" shape="rect">
+                <area alt="Philippines" title="Philippines" href="philippines.html" coords="540,360,650,400" shape="rect">
+                <area alt="maldives" title="maldives" href="maldives.html" coords="200,400,375,500" shape="rect">
+            </map>
+        </div>
+    </section>
+  </section>
+  
+<section id="land">
+  <h3>✦ Author’s Note ✦</h3>
+  <div class="author-grid">
+    <img src="photo10.avif" alt="Travel Pic">
+    <img src="photo11.avif" alt="Travel Pic">
+    <img src="photo12.avif" alt="Travel Pic">
+    <img src="photo13.jpg" alt="Travel Pic">
+    <p>
+      I’ve come to realize that travel isn’t about checking places off a list — it’s about getting beautifully lost.<br><br>
+      It’s the strangers who become stories, the quiet mornings in unfamiliar cities, and the chaos that somehow feels like home.<br><br>
+      Maybe we’re not meant to stay in one place. Maybe the world is too big, too wild, too full of soul to just watch it through someone else’s lens.<br><br>
+      So here’s to the missed trains, the midnight talks, the unplanned detours — and to chasing that feeling that can’t be Googled.<br><br>
+      Wherever you are, keep moving, keep feeling, and keep chasing the hell yes.<br>
+      See you on the next one 🌍💫.
+      <br><br>
+      -Emil Maria Giby
+    </p>
+  </div>
+</section>
+
+<!-- 🌟 Rating Box Section -->
+<section style="background-image:''; padding: 2rem; text-align: center;">
+  <h3 style="font-family: 'Pacifico', cursive;">🌟 Rate This Website 🌟</h3>
+  <p>We’d love to hear your feedback!</p>
+  <div id="rating-box">
+    <form id="ratingForm">
+      <label>
+        <input type="radio" name="stars" value="1"> ⭐
+      </label>
+      <label>
+        <input type="radio" name="stars" value="2"> ⭐⭐
+      </label>
+      <label>
+        <input type="radio" name="stars" value="3"> ⭐⭐⭐
+      </label>
+      <label>
+        <input type="radio" name="stars" value="4"> ⭐⭐⭐⭐
+      </label>
+      <label>
+        <input type="radio" name="stars" value="5"> ⭐⭐⭐⭐⭐
+      </label>
+      <br><br>
+      <button type="submit" class="btn" style="color: white; border: none;">Submit Rating</button>
+    </form>
+    <p id="thankYouMessage" style="margin-top: 1rem; display: none; color: green; font-weight: bold;">Thank you for your feedback! 🌟</p>
+  </div>
+</section>
+
+<script>
+  // Welcome message
+  window.onload = function () {
+    setTimeout(() => {
+      alert("🌏 Welcome to Travel Vibes! Ready to explore?");
+    }, 500);
+  };
+
+  // Hero heading text animation
+  const heroHeading = document.querySelector('#hero h2');
+  heroHeading.addEventListener('mouseenter', () => {
+    heroHeading.textContent = "WANDER MORE ✈️";
+  });
+  heroHeading.addEventListener('mouseleave', () => {
+    heroHeading.textContent = "EXPLORE. DREAM. DISCOVER.";
+  });
+
+  // ENTER button alert
+  const enterBtn = document.getElementById('enterBtn');
+  enterBtn.addEventListener('click', function (e) {
+    e.preventDefault();
+    alert("📍 Let's go somewhere unforgettable!");
+    window.location.href = this.href;
+  });
+
+  
+
+  // Handle rating submission
+  const form = document.getElementById("ratingForm");
+  const thankYou = document.getElementById("thankYouMessage");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const rating = document.querySelector('input[name="stars"]:checked');
+    if (rating) {
+      thankYou.style.display = "block";
+      form.style.display = "none";
+    } else {
+      alert("Please select a rating before submitting!");
+    }
+  });
+</script>
+
+</body>
+</html>
+

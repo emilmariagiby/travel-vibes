@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Kazakhstan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <style>
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Raleway', sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* Navigation styles */
+    nav {
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: rgb(89, 75, 140);
+      margin-left: 1 rem;
+      font-weight: 500; 
+    }
+
+    nav a:hover {
+      color: rgb(30, 30, 30);
+    }
+    .logo {
+      font-family:'Pacifico', cursive;
+      font-size: 1.7rem;
+      color:rgb(89, 75, 140) ;
+    }
+
+    /* Hero section styles */
+    .hero {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .hero video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-content {
+      position: relative;
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      color: rgba(255, 255, 255, 0.621);
+      text-align: center;
+      padding: 0 2rem;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      margin-top: 15%;
+      color: rgb(89, 75, 140);
+      text-decoration:none;
+      font-weight: 600;
+      font-size: 1.5rem;
+      font-family:monospace
+    }
+
+    .btn:hover {
+      color: rgb(50, 33, 113);
+    }
+
+    /* Destinations section */
+    .destinations {
+      background-image:url('photo24.jpg');
+      
+
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .destinations h2 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .destinations-container {
+      display: flex;
+      overflow-x: auto;
+       /* For Firefox */
+    }
+
+    .destinations-container::-webkit-scrollbar {
+      display: none; 
+    }
+    .destination {
+      flex: 0 0 auto;
+      width: 360px;
+      margin-right: 1.5rem;
+      border-radius: 10px;      
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .destination img {
+      width: 100%;
+      height: 220px;
+      object-fit:fill;
+    }
+
+    .destination-info {
+      padding: 3rem;
+      background: #f9f9f9;
+    }
+
+    .destination h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.5rem;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">
+      <a href="main1.html">🌏</a>
+      <a href="#">Explore Kazakhstan</a> 
+    </div>
+    <div class="nav-links">
+      <a href="#destinations">Destinations</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <video autoplay muted loop>
+      <source src="kazakhstan.mp4" type="video/mp4">
+      
+    </video>
+    <div class="hero-content">
+      
+      <a href="#destinations" class="btn">Explore Destinations</a>
+    </div>
+  </header>
+
+  <section id="destinations" class="destinations">
+
+    <h2 style="font-family:Abril Fatface;font-weight:500;font-size:70px;color: aquamarine;">
+      Breathtaking Getaways
+    </h2>
+    
+    <div class="destinations-wrapper">
+      <div class="destinations-container">
+        
+        <!-- Destination 1: Almaty -->
+        <div class="destination">
+          <img src="almaty.jpeg" alt="Almaty">
+          <div class="destination-info">
+            <h3>Almaty</h3>
+            <p>Surrounded by snow-capped peaks, Almaty is a blend of modern city life and natural beauty.<br>- Southeastern Kazakhstan</p>
+          </div>
+        </div>
+        
+        <!-- Destination 2: Charyn Canyon -->
+        <div class="destination">
+          <img src="charyn can.jpg" alt="Charyn Canyon">
+          <div class="destination-info">
+            <h3>Charyn Canyon</h3>
+            <p>Marvel at Kazakhstan’s own version of the Grand Canyon with breathtaking red rock formations.<br>- Almaty Region</p>
+          </div>
+        </div>
+        
+        <!-- Destination 3: Astana -->
+        <div class="destination">
+          <img src="astana.jpeg" alt="Astana">
+          <div class="destination-info">
+            <h3>Astana</h3>
+            <p>Explore the futuristic capital filled with stunning architecture and cultural landmarks.<br>- Northern Kazakhstan</p>
+          </div>
+        </div>
+        
+        <!-- Destination 4: Lake Kaindy -->
+        <div class="destination">
+          <img src="kaindy.jpeg" alt="Lake Kaindy">
+          <div class="destination-info">
+            <h3>Lake Kaindy</h3>
+            <p>A submerged forest and turquoise waters make this lake a surreal and unique sight.<br>- Tian Shan Mountains</p>
+          </div>
+        </div>
+        
+        <!-- Destination 5: Shymbulak -->
+        <div class="destination">
+          <img src="shymbulak.JPG" alt="Shymbulak">
+          <div class="destination-info">
+            <h3>Shymbulak</h3>
+            <p>Kazakhstan’s premier ski resort nestled in the mountains near Almaty.<br>- Medeu Valley</p>
+          </div>
+        </div>
+        
+        <!-- Destination 6: Mangystau Region -->
+        <div class="destination">
+          <img src="mangyastau.jpeg" alt="Mangystau">
+          <div class="destination-info">
+            <h3>Mangystau</h3>
+            <p>Explore ancient underground mosques, desert landscapes, and mysterious rock formations.<br>- Southwestern Kazakhstan</p>
+          </div>
+        </div>
+        
+        <!-- Destination 7: Big Almaty Lake -->
+        <div class="destination">
+          <img src="big almaty lake.jpeg" alt="Big Almaty Lake">
+          <div class="destination-info">
+            <h3>Big Almaty Lake</h3>
+            <p>A pristine alpine lake with glacier-fed waters nestled in the mountains.<br>- Near Almaty</p>
+          </div>
+        </div>
+        
+        <!-- Destination 8: Turkistan -->
+        <div class="destination">
+          <img src="turkistan.jpeg" alt="Turkistan">
+          <div class="destination-info">
+            <h3>Turkistan</h3>
+            <p>Home to the stunning Mausoleum of Khoja Ahmed Yasawi, a spiritual and cultural gem.<br>- South Kazakhstan</p>
+          </div>
+        </div>
+        
+        <!-- Destination 9: Kolsai Lakes -->
+        <div class="destination">
+          <img src="kolsai.jpg" alt="Kolsai Lakes">
+          <div class="destination-info">
+            <h3>Kolsai Lakes</h3>
+            <p>Three alpine lakes surrounded by dense forests and mountains—a hiking paradise.<br>- Near the Kyrgyz border</p>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  
+  </section>
+
+</body>
+</html>

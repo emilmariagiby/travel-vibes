@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickable Asia Map</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .popup {
+            position: relative;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: black;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="popup">
+        <button class="close-btn" onclick="closePopup()">X</button>
+        <img src="asia map.png" usemap="#asia-map" alt="Asia Map" width="800">
+        <map name="asia-map">
+            <area alt="Turkey" title="Turkey" href="turkey.html" coords="" shape="rect">
+            <area alt="Saudi Arabia" title="Saudi Arabia" href="saudi_arabia.html" coords="" shape="rect">
+            <area alt="India" title="India" href="india.html" coords="300,250,350,400" shape="rect">
+            <area alt="Indonesia" title="Indonesia" href="indonesia.html" coords="500,400,600,500" shape="rect">
+            <area alt="China" title="China" href="china.html" coords="400,200,500,300" shape="rect">
+            <area alt="Mongolia" title="Mongolia" href="mongolia.html" coords="350,148,450,200" shape="rect">
+            <area alt="Russia" title="Russia" href="russia.html" coords="325,8,880,116" shape="rect">
+            <area alt="Thailand" title="Thailand" href="thailand.html" coords="395,355,430,400" shape="rect">
+            <area alt="South Korea" title="South Korea" href="south_korea.html" coords="520,195,580,250" shape="rect">
+            <area alt="Japan" title="Japan" href="japan.html" coords="550,195,600,250" shape="rect">
+            <area alt="Kazakhstan" title="Kazakhstan" href="kazakhstan.html" coords="200,148,350,200" shape="rect">
+            <area alt="Philippines" title="Philippines" href="philippines.html" coords="540,360,650,400" shape="rect">
+            <area alt="maldives" title="maldives" href="maldives.html" coords="200,400,375,500" shape="rect">
+        </map>
+    </div>
+    <script>
+        function closePopup() {
+            document.querySelector('.popup').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
